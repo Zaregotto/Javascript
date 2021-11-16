@@ -79,6 +79,7 @@ let arrayBack = [2,17,13,6,22,31,45,66,100,-18];
 //     i--
 // };
 
+
 // for (let i=arrayBack.length-1; i >+ 0; i--) {
 //     if (i % 2 === 1){
 //         document.write(`<div>${arrayBack[i]}</div>`)
