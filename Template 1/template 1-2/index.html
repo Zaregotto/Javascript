@@ -6,6 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div img {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
 <div>
@@ -15,6 +34,7 @@
   <h2>NAME SURNAME. age is - AGE</h2>
   <p>INFO</p>
   <img src="PHOTO" alt="">
+</div>
 
 <!--    Використовуючи данні з масиву, за допомоги document.write та циклу-->
 <!--    побудувати структуру по шаблону template2.1 & template2.2. Зробити адекватну стилізацію.-->
@@ -58,13 +78,6 @@
                 photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
             },
         ];
-        // for (const simpson of simpsons) {
-        //     document.write(`<div>`);
-        //     document.write(`${simpson.name} - ${simpson.age} - ${simpson.info} - <img src="${simpson.photo}" alt=""/>`)
-        //     document.write(`</div>`);
-        //
-        // }
-
         for (const simpson of simpsons) {
             document.write(`<div>`);
             document.write(`<h1>${simpson.name} ${simpson.surname}. Age is - ${simpson.age}</h1>`)
@@ -73,7 +86,6 @@
             document.write(`</div>`);
         }
     </script>
-</div>
 
 </body>
 </html>
