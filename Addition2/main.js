@@ -50,7 +50,7 @@
 // Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
 // let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 // for (let i = 0; i <= 15; i += 3){
-//     if (i % 2 === 0) {
+//     if (array[i] % 2 === 0) {
 //         array[i] = i;
 //         console.log(array[i]);
 //     }
@@ -133,8 +133,10 @@
 //     {user_id: 2, country: 'Poland', city: 'Krakow'},
 //     {user_id: 4, country: 'USA', city: 'Miami'}
 // ];
-//(Не знаю розв'язку)
-
+//
+// for (const usersWithCities of usersWithId){
+//     document.write(${usersWithId})
+// }
 
 // - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
 // let array = [100,250,50,168,120,345,188,200,8,1001]
