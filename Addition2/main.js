@@ -48,11 +48,15 @@
 
 
 // Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
-let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
-for (let i = 0; i <= array.length; i += 3){
-    if (array[i] % 2 === 0)
-        console.log(array[i]);
-}
+// let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+// function Get (array1) {
+// for (let i = 0; i <= array1.length; i += 3) {
+//     if (array1[i] % 2 === 0)
+//         console.log(array1[i]);
+// }
+// }
+// Get(array)
+
 
 
 
@@ -133,8 +137,13 @@ for (let i = 0; i <= array.length; i += 3){
 // ];
 //
 // for (const usersWithCities of usersWithId){
-//     document.write(${usersWithId})
+//     for (const city of citiesWithId){
+//         if (usersWithCities.id === city.user_id){
+//             usersWithCities.address = `${city.country}, ${city.city}`
+//         }
+//     }
 // }
+// console.log(usersWithId)
 
 // - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
 // let array = [100,250,50,168,120,345,188,200,8,1001]
