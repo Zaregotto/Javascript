@@ -151,11 +151,9 @@
 //     let str = "Сила тяжести приложена к центру масс тела";
 // document.writeln(cutString(str, 5)) // 'Сила тяжести приложена к центру'
 // let str = "Сила тяжести приложена к центру масс тела";
-// function cutString(str, n) {
-//     if ((str.constructor === String) && (n>0)) {
-//     return str.slice(0, n);
-//     }
+// function stringToarray(str) {
+//     return str.trim().split(" ")
 // }
-// document.write(cutString(str, 31))
-
+// let arr = stringToarray(str)
+// document.write(arr.splice(0, 5))
 
