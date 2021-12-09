@@ -54,7 +54,7 @@
 // 2й - оставляет старше 29 лет включительно
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
-
+//
 // let usersWithAddress = [
 //     {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
 //     {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
@@ -74,29 +74,45 @@
 // input1.setAttribute('type', 'checkbox')
 // input1.setAttribute('name', 'status')
 // const input2 = document.createElement('input')
-// input2.setAttribute('type','checkbox')
+// input2.setAttribute('type','number')
 // input2.setAttribute('name', 'age')
 // const input = document.createElement('input')
-// input.setAttribute('type', 'checkbox')
+// input.setAttribute('type', 'text')
 // input.setAttribute('name', 'city')
+// const button = document.createElement('button')
+// button.innerText = 'фільтр'
 // document.body.appendChild(form)
-// document.getElementById('f1').append(input1, input2, input)
-//
-// let f1 = document.getElementById('f1');
-//
-// f1.status.onclick = function () {
-//     if (this.checked) {
-//         let filter = usersWithAddress.filter(value => {
-//             return value.status
-//         })
-//
-//         filter.forEach(value => {
-//             let li = document.createElement('li')
-//             document.body.appendChild(li)
-//             li.innerText = `${value.name} - ${value.age} - ${!value.status}`;
-//         })
+// document.getElementById('f1').append(input1, input2, input, button)
+// const containerId = "container"
+// let f1 = document.forms.f1;
+// f1.onsubmit = function (e) {
+//     e.preventDefault();
+//     let status = this.status.checked;
+//     let age = this.age.value || 0;
+//     let city = this.city.value || '';
+//     const container = document.getElementById(containerId)
+//     if (container) {
+//         container.remove()
 //     }
-// }
+//     else {
+//         const div = document.createElement('div')
+//         div.id = containerId
+//         document.body.appendChild(div)
+//         if (status) {
+//             const array = usersWithAddress.filter(user => status ? !user.status : true)
+//                 .filter(user => age ? user.age >= age : true)
+//                 .filter(user => city ? user.address.city.toLowerCase() === city.toLowerCase() : true)
+//             array.forEach(user => {
+//                 const li = document.createElement('li')
+//                 li.innerHTML = `${user.status} - ${user.age} - ${user.address.city}`
+//                 div.appendChild(li)
+//             })
+//         }
+//     }
+//     console.log({status, age,});
+//     console.log(city)
+// };
+
 
 
 // *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
