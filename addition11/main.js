@@ -22,6 +22,7 @@ function addEvent(elem, type, handler) {
         }
         return false;
 }
+
 function getCartData(){
         return JSON.parse(localStorage.getItem('cart'));
 }
